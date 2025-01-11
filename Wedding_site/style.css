@@ -1,0 +1,493 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #1a1a1a;
+    overflow: hidden;
+  }
+  
+ul{
+    list-style: none;
+}
+.header{
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    display: flex;
+    width: 100vw;
+    height: 75px;
+    background-color: #fff;
+    opacity: 70%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    
+    
+}
+
+h1{
+    font-size: 70px;
+    font-weight: 900;
+    padding: 25px;
+    font-style: italic;
+    color: rgb(240, 115, 13);
+}
+.nav{
+
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+    
+
+ul a{
+    text-decoration: none;
+    font-style: italic;
+    color:black;
+    padding-left: 15px;
+    cursor: pointer;   
+    color: #000000; 
+
+}
+ul a:hover{
+    color: gold
+}
+.active{
+    color: gold;
+}
+.home{
+    height: 100vh;
+    background: url(./images/home_cover.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    
+}
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; 
+}
+
+.section{
+    position: absolute;
+    display: flex;
+    background-color: #fff;
+    opacity: 70%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.invite-name {
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+    z-index: 100;
+    height: 100vh; 
+    text-align: center;
+}
+
+#names{
+    font-size: 100px;
+    font-family: "Tangerine", serif;
+    text-decoration: underline 2px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    z-index: 20; 
+}
+
+#names:hover{
+    color: gold;
+    background-color: transparent;
+    cursor:none;
+    transition: 2s ease-out;
+  
+}
+
+.team{
+    position: relative;
+    top: 150px;
+    left: 0px;
+    display: flex;
+    background-color: white;
+    border: 10px solid dashed;
+    justify-content: center;
+    align-items: center;
+    width: 98vw;
+    height: 80vh;
+    font-size: 1.5rem;
+    word-spacing: 2px;
+}
+.team h1{
+    font-family: "Tangerine", serif;
+}
+
+.team h2{
+    font-family: "Tangerine", serif;
+    font-size: 50px;
+    color: rgb(255, 0, 0);
+    padding: 10px;
+    text-decoration:underline 2px;
+}
+.team-groom{
+    width: 50%;
+    height: 100%;
+    z-index: 1;
+    border: solid 1px ;
+}
+
+.team-bride{
+    
+    text-align: right;
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    z-index: 1;
+   
+}
+
+.team-bride li{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 24px;
+    color: white;
+
+} 
+.team-bride a{
+    margin-right: 24px;
+    color: white;
+}
+
+.team-groom img{
+    height: 300px;
+    width:250px;
+    float: right;
+    border-radius: 18px;
+}
+.team-bride img{
+    height: 300px;
+    width: 250px;;
+    float: left;
+    border-radius: 18px;
+    
+}
+.bridal-shoot{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    z-index: 10;
+    }
+.bridal-shoot img{
+
+    width: 50vw;
+    height: auto;
+    border: 10px white solid;
+}
+.bridal-shoot h1,.back{
+   font-size:3rem;
+   color:white;
+   z-index: 20;
+   font-family: "Tangerine", serif;
+}
+
+.soccer{
+    background: url(http://upload.wikimedia.org/wikipedia/en/e/ec/Soccer_ball.svg);
+    background-size: 100px 100px;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    -webkit-animation:roll 4.5s infinite;
+    -moz-animation:roll 4.5s infinite;
+    animation:roll 4.5s infinite;
+    z-index: 400;
+}
+  
+@-moz-keyframes roll {  
+    0% {left:0px; -webkit-transform: rotate(-360deg);}
+    50% {left:1000px; -webkit-transform: rotate(360deg);}
+    100% {left:0px; -webkit-transform: rotate(-360deg);}
+}
+@-webkit-keyframes roll { 
+    0% {left:0px; -webkit-transform: rotate(-360deg);}
+    50% {left:1000px; -webkit-transform: rotate(360deg);}
+    100% {left:0px; -webkit-transform: rotate(-360deg);}
+}
+  
+@keyframes roll { 
+    0% {left:0px; -webkit-transform: rotate(-360deg);}
+    50% {left:1000px; -webkit-transform: rotate(360deg);}
+    100% {left:0px; -webkit-transform: rotate(-360deg);}
+
+}
+  
+.world-cup {
+    color: #41732c;
+    text-align: center;
+}
+
+.wedding{
+    display: flexbox;
+    position: absolute; 
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    top:50px
+}
+.wedding-block{
+
+    top: 255px;
+    left: 0;
+ 
+}
+.wedding-block h1{
+    display:block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2.9rem;
+    padding: 0;
+    margin-bottom: 0;
+    color: white;
+    font-family: "Tangerine", serif ;
+    line-height: 1.2;
+  
+}
+
+.notes h1{
+    margin: 0;
+}
+
+h1.names{
+    color: gold;
+    margin: 0;
+    margin-top: 1%;
+    font-size: 5.5rem;
+}
+
+.wedding-block p{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    text-align: center;
+    text-decoration:wavy;
+    color: white;
+    font-size: 1.3rem;
+    margin: 0;
+ 
+}
+
+.imagecarousel {
+    position: relative;
+    height: 233px;
+    margin-bottom: 30px;
+    display: flex;
+    width: 100%;
+}
+
+.imagecarousel img {
+  margin: 0px 25px;
+  box-shadow: 2px 2px 8px #8a8a8a;
+}
+
+.imagecarousel {
+  animation: bannermove 50s linear infinite;
+}
+
+@keyframes bannermove {
+   0% {
+    left: 0;
+  }
+  50% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+
+
+.button-container {
+    text-align: center;
+    
+}
+
+.popup-btn {
+    margin: 10px;
+    padding: 10px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: gold;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    
+}
+
+.popup-btn:hover {
+    background-color: silver
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+}
+
+.popup img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    font-weight: bolder;
+    cursor: pointer;
+    color: #ff0000;
+    background-color: transparent;
+    border: none;
+}
+
+.close-btn:hover {
+    color: red; /* You can change this to any color you want */
+}
+.back-btn {
+    margin-top: 15px; /* Space above the button */
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+
+.rsvp{
+    display: inline-flex;
+    background-image: url(./images/rsvpback.jpg);
+    background-position: center;
+    background-size: cover ;
+    background-attachment: fixed;
+    height:100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.form{
+    height: 500px;
+    width: 400px;
+    margin-top: 180px;
+    margin-left: 40%;
+    background-color: #000000;
+    opacity: 80%;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 0px 0px;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0, .25);
+    z-index: 400;
+  }
+  
+.info {
+    padding: 10px;
+}
+.info h1{
+    font-family: "Tangerine", serif ;
+}
+  
+ .rsvp h1, h2, p {
+    text-align: center;
+    padding: 0px;
+    margin: 5px 5px;
+  }
+  
+
+  
+  p.line {
+    margin: 0px auto 20px auto;
+    color: #999;
+  }
+  
+  .form input {
+    font-size: 15px;
+    color: #666;
+    padding: 6px;
+    margin: 25px auto 20px;
+    display: block;
+    width: 75%;  
+  }
+  
+
+  
+  .button button {
+    display: inline-block;
+    width: 400px;
+  }
+  button {
+    color: #000000;
+    background-color: #f4f4f4;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 32px;
+    width: 200px;
+    margin: 20px auto 0px auto; 
+    float:left;
+  }
+  
+  button.accept {
+    border-radius: 0px 0px 0px 10px;
+    border-right: solid 1px #cc919a;
+  }
+  
+  button.regret {
+    border-radius: 0px 0px 10px 0px;
+  }
+  
+  button:hover {
+    background-color: #cc919a;
+    transition: .5s;
+  }
+  
+  button:focus {
+    outline: 0;
+  }
+  

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding invitation</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Text:ital@0;1&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>L'Amour</h1>
+        <nav>
+            <h2>
+                <ul class="nav">
+                    <li><a href="./index.html" >#Home</a></li>
+                    <li><a href="./couple_goals.html">#CoupleGoals</a></li>
+                    <li><a href="./wedding.html" class="active">#Wedding</a></li>
+                    <li><a href="./rsvp.html">#RSVP</a></li>
+                </ul>
+            </h2>
+        </nav>
+    </header>
+
+    <section class="wedding">
+        <div class="soccer"></div>
+<hr>
+        <div class="wedding-block details">
+            <p>
+                After months of intense rivalry on the field, we've finally come together for one common goal — to score a lifetime of happiness.
+            </p>
+            <div class="notes">
+                <h1 class="names">John</h1>
+                <p>Once a proud Liverpool fan, now playing for Team Jane</p>
+                 <h1>&amp;</h1>
+                
+                <h1 class="names">Jane</h1>
+                <p>Manchester United’s fiercest supporter and now John’s coach</p>
+                <p>invites you to witness them both score the ultimate goal!</p>
+            </div>
+        </div>
+        <hr>
+        <div class="imagecarousel">
+            <img src="./images/background3.jpg" alt="" />
+            <img src="./images/background4.avif" alt="" />
+            <img src="./images/wed2.jpeg" alt="" />
+            <img src="./images/wed3.jpg" alt="" />
+            <img src="./images/wed4.jpg" alt="" />
+            <img src="./images/wed6.jpg" alt="" />
+            <img src="./images/wed7.jpg" alt="" />
+            <img src="./images/wed8.jpg" alt="" />
+            <img src="./images/wed1.jpg" alt="" />
+      </div>
+      <div class="btn">
+        <div class="button-container">
+            <button class="popup-btn" onclick="openPopup(1)">Date</button>
+            <button class="popup-btn" onclick="openPopup(2)">Game Time</button>
+            <button class="popup-btn" onclick="openPopup(3)">Stadium </button>
+        </div>
+    
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closePopup()">×</span> <!-- Close button -->
+                <img id="popup-image" src="" alt="Popup Image">
+                <p id="popup-text"></p>
+                <button class="back-btn" onclick="goBack()">Back</button>
+            </div>
+        </div>
+        
+      </div>
+        <hr>\
+    </section>
+
+   <script src="index.js"></script>
+</body>
+</html>
